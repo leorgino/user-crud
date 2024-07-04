@@ -1,0 +1,131 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ ul {
+    list-style: none;
+}
+
+/* ====== ====== ====== TOAST ====== ====== ======  */
+.toast {
+    padding: 1.2rem;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 100.4rem;
+    padding-block-end: 4rem;
+    flex: 1;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-block-start: 1rem;
+}
+
+.form__error {
+    color: #e01818;
+    font-size: 1.3rem;
+}
+
+.footer {
+    width: 100%;
+    background: #FFF;
+    font-size: 1.4rem;
+    border-block-start: 0.1rem solid #F0F0F0;
+    padding-block: 1rem;
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.footer svg {
+    width: 1.8rem;
+    aspect-ratio: 1;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #333;
+}
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+/* Custom scroll */
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+  
+body::-webkit-scrollbar:vertical {
+    width:0.8rem;
+  }
+  
+body::-webkit-scrollbar-button:increment,body::-webkit-scrollbar-button {
+    display: none;
+} 
+  
+body::-webkit-scrollbar:horizontal {
+    height: 0.8rem;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(238, 238, 238);
+    border-radius: 1rem;
+    border: 0.2rem solid #e6e6e6;
+}
+  
+body::-webkit-scrollbar-track {
+    border-radius: 0.8rem;  
+}
+  
+
+
+
+
+@media (min-width: 768px){
+    .header {
+        margin-block-start: 4rem;
+    }
+}
